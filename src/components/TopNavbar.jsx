@@ -17,7 +17,7 @@ const TopNavbar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
   return (
-    <div className="bg-red-600 text-white">
+    <div className="fixed top-0 left-0 right-0 bg-red-600 text-white shadow-lg z-50 transition-all duration-300">
       {/* Main navigation */}
       <div className="flex items-center justify-between px-4 py-3 md:w-2/5 lg:w-2/5 xl:w-2/5 mx-auto">
         {/* Left side - Logo and title */}
