@@ -1,0 +1,27 @@
+{
+  "name": "ফ্রী ব্লাড ডোনার - স্বেচ্ছাসেবী ফাউন্ডেশন",
+  "short_name": "Free Blood Donor",
+  "description": "A volunteer foundation dedicated to connecting blood donors with patients in need of emergency blood transfusions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#dc2626",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["health", "medical", "social"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "free-blood-donor-app"
+}
