@@ -29,6 +29,10 @@ const TopNavbar = () => {
               width={40}
               height={40}
               className="rounded-full object-cover"
+              onError={(e) => {
+                e.target.src = '/vercel.svg'; // Fallback image
+              }}
+              unoptimized={true}
             />
           </div>
           <div>

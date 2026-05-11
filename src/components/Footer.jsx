@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -19,6 +20,10 @@ const Footer = () => {
                   width={48}
                   height={48}
                   className="rounded-full object-cover"
+                  onError={(e) => {
+                    e.target.src = '/vercel.svg'; // Fallback image
+                  }}
+                  unoptimized={true}
                 />
               </div>
               <div>
@@ -36,24 +41,24 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-sm text-gray-300 hover:text-white transition-colors">
+                <Link href="/" className="text-sm text-gray-300 hover:text-white transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/requests" className="text-sm text-gray-300 hover:text-white transition-colors">
+                <Link href="/requests" className="text-sm text-gray-300 hover:text-white transition-colors">
                   Blood Requests
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/donors" className="text-sm text-gray-300 hover:text-white transition-colors">
+                <Link href="/donors" className="text-sm text-gray-300 hover:text-white transition-colors">
                   Find Donors
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/profile" className="text-sm text-gray-300 hover:text-white transition-colors">
+                <Link href="/profile" className="text-sm text-gray-300 hover:text-white transition-colors">
                   Profile
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

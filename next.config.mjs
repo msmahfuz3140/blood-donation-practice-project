@@ -14,7 +14,8 @@ const nextConfig = {
       }
     ],
     domains: ['localhost', '127.0.0.1'],
-    unoptimized: false,
+    unoptimized: true,
+    formats: ['image/webp', 'image/avif'],
   },
 };
 
