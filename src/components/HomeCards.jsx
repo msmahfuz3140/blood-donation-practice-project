@@ -7,7 +7,7 @@ import UpcomingDrives from './UpcomingDrives';
 
 const HomeCards = () => {
   return (
-    <div className="px-4 py-6 space-y-6 md:w-[40%] mx-auto">
+    <div className="px-4 py-6 space-y-6 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
       {/* Emergency Request Card */}
       <div className="bg-red-600 rounded-xl p-6 flex items-center justify-between text-white">
         <div className="flex items-center space-x-4">

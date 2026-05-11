@@ -19,7 +19,7 @@ const TopNavbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-red-600 text-white shadow-lg z-50 transition-all duration-300">
       {/* Main navigation */}
-      <div className="flex items-center justify-between px-4 py-3 md:w-2/5 lg:w-2/5 xl:w-2/5 mx-auto">
+      <div className="flex items-center justify-between px-4 py-3 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
         {/* Left side - Logo and title */}
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10">
@@ -36,8 +36,8 @@ const TopNavbar = () => {
             />
           </div>
           <div>
-            <div className="text-sm font-medium">ফ্রি ব্লাড ডোনেশন</div>
-            <div className="text-xs">সোসাইটি</div>
+            <div className="text-sm font-medium">ফ্রী ব্লাড ডোনার</div>
+            <div className="text-xs">স্বেচ্ছাসেবী ফাউন্ডেশন</div>
           </div>
         </div>
 

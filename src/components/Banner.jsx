@@ -64,8 +64,8 @@ const Banner = () => {
 
   if (!isMounted) {
     return (
-      <div className="relative h-48 md:h-64 lg:h-80 overflow-hidden">
-        <div className="relative w-full md:w-2/5 lg:w-2/5 xl:w-2/5 mx-auto">
+      <div className="relative w-full h-48 md:h-64 lg:h-80 overflow-hidden">
+        <div className="relative w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
           <Image
             src={slides?.image}
             alt="Blood Donation Banner"
@@ -99,7 +99,7 @@ const Banner = () => {
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
           >
-            <div className="relative w-full h-full md:w-2/5 lg:w-2/5 xl:w-2/5 mx-auto">
+            <div className="relative w-full h-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
               <Image
                 src={slide?.image}
                 alt={`Blood Donation Banner ${index + 1}`}

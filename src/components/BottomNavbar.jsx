@@ -8,7 +8,7 @@ const BottomNavbar = () => {
   const pathname = usePathname();
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 w-screen">
-      <div className="flex items-center justify-around py-2 md:w-2/5 lg:w-2/5 xl:w-2/5 mx-auto">
+      <div className="flex items-center justify-around py-2 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
         {/* Home */}
         <button
           onClick={() => router.push('/')}
