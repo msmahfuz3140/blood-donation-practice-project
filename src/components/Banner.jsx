@@ -11,6 +11,12 @@ const Banner = () => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
   }, []);
+  const banners = [
+    "/images/blood-doctor.jfif",
+    "/images/banner2.jfif",
+    "/images/banner3.jfif",
+    "/images/banner4.jfif",
+  ];
 
   const slides = [
     {
@@ -67,12 +73,11 @@ const Banner = () => {
       <div className="relative w-full h-48 md:h-64 lg:h-80 overflow-hidden">
         <div className="relative w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
           <Image
-            src={slides?.image}
-            alt="Blood Donation Banner"
-            width={800}
-            height={320}
-            className="w-full h-full object-cover"
+            src="/images/blood-doctor.jfif"
+            alt="banner img"
+            fill
             priority
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <div className="text-center text-white px-4">
@@ -101,13 +106,11 @@ const Banner = () => {
           >
             <div className="relative w-full h-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
               <Image
-                src={slide?.image}
-                alt={`Blood Donation Banner ${index + 1}`}
-                width={400}
-                height={320}
+                src={slide?.image || "/images/blood-doctor.jfif"}
+                alt="banner img"
+                fill
+                priority
                 className="object-cover"
-                priority={index === 0}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 40vw"
               />
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
