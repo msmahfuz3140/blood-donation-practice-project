@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const TopNavbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -21,10 +22,10 @@ const TopNavbar = () => {
       {/* Main navigation */}
       <div className="flex items-center justify-between px-4 py-3 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
         {/* Left side - Logo and title */}
-        <div className="flex items-center space-x-3">
+        <Link href="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity">
           <div className="w-10 h-10">
             <Image
-              src="/images/logo.jfif"
+              src="/images/logo.jpg"
               alt="Blood Donation Logo"
               width={40}
               height={40}
@@ -39,7 +40,7 @@ const TopNavbar = () => {
             <div className="text-sm font-medium">ফ্রী ব্লাড ডোনার</div>
             <div className="text-xs">স্বেচ্ছাসেবী ফাউন্ডেশন</div>
           </div>
-        </div>
+        </Link>
 
         {/* Right side - Share, notifications, menu */}
         <div className="flex items-center space-x-4">
@@ -65,7 +66,7 @@ const TopNavbar = () => {
             {isDropdownOpen && (
               <div ref={dropdownRef} className="absolute top-full right-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 z-50">
                 <div className="py-2">
-                  <button className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center space-x-3">
+                  <Link href="/profile" onClick={() => setIsDropdownOpen(false)} className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center space-x-3">
                     <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
@@ -73,7 +74,17 @@ const TopNavbar = () => {
                       <div className="font-medium text-gray-800">Profile</div>
                       <div className="text-xs text-gray-600">Manage your profile</div>
                     </div>
-                  </button>
+                  </Link>
+
+                  <Link href="/medical-info" onClick={() => setIsDropdownOpen(false)} className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center space-x-3">
+                    <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-3-3v6m-9 1h18a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <div>
+                      <div className="font-medium text-gray-800">Medical Info</div>
+                      <div className="text-xs text-gray-600">রক্তদান সংক্রান্ত তথ্য</div>
+                    </div>
+                  </Link>
 
                   <button className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center space-x-3">
                     <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

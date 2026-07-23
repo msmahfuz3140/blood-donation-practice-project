@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12">
                 <Image
-                  src="/images/logo.jfif"
+                  src="/images/logo.jpg"
                   alt="Blood Donation Logo"
                   width={48}
                   height={48}
@@ -58,6 +58,11 @@ const Footer = () => {
               <li>
                 <Link href="/profile" className="text-sm text-gray-300 hover:text-white transition-colors">
                   Profile
+                </Link>
+              </li>
+              <li>
+                <Link href="/medical-info" className="text-sm text-gray-300 hover:text-white transition-colors">
+                  Medical Info
                 </Link>
               </li>
             </ul>

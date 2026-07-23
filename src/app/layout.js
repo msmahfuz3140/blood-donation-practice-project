@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
     url: 'https://blood-donation-practice-project.vercel.app',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://blood-donation-practice-project.vercel.app/images/logo.jfif',
+      url: 'https://blood-donation-practice-project.vercel.app/images/logo.jpg',
       width: 400,
       height: 400,
     },

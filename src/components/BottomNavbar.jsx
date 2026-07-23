@@ -42,6 +42,17 @@ const BottomNavbar = () => {
           <span className="text-xs">Donors</span>
         </button>
 
+        {/* Medical Info */}
+        <button
+          onClick={() => router.push('/medical-info')}
+          className={`flex flex-col items-center p-2 transition-all duration-200 hover:scale-110 ${pathname === '/medical-info' ? 'text-red-600' : 'text-gray-600 hover:text-red-500'}`}
+        >
+          <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-3-3v6m-9 1h18a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span className="text-xs">Medical Info</span>
+        </button>
+
         {/* Profile */}
         <button
           onClick={() => router.push('/profile')}
