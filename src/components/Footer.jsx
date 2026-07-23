@@ -27,8 +27,8 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <h3 className="text-lg font-bold">ফ্রি ব্লাড ডোনেশন</h3>
-                <p className="text-sm text-gray-400">সোসাইটি</p>
+                <h3 className="text-lg font-bold">ফ্রী ব্লাড ডোনার</h3>
+                <p className="text-sm text-gray-400">স্বেচ্ছাসেবী ফাউন্ডেশন</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
@@ -76,7 +76,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-sm text-gray-300">Emergency: +880 1234-567890</span>
+                <span className="text-sm text-gray-300">Emergency: +880 1401336455</span>
               </div>
               <div className="flex items-center space-x-3">
                 <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 </svg>
-                <span className="text-sm text-gray-300">Dhaka, Bangladesh</span>
+                <span className="text-sm text-gray-300">Mymensingh, Bangladesh</span>
               </div>
             </div>
           </div>
